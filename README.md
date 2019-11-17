@@ -3,6 +3,12 @@ add request limitation middleware to protect ddos attack.
 
 # useage
 
+setup redis with
+- url: "localhost:6379"
+- password: ""
+
+this library will use redis default database (i.e. 0).
+
 ```bash
 go get -u github.com/mkusaka/dgos
 ```
@@ -39,3 +45,4 @@ func okHandler(w http.ResponseWriter, r *http.Request) {
 - [ ] refactoring
 - [ ] worker for log
 - [ ] add [Retry-After header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Retry-After) for request if it reached limit
+- [ ] make db setting configurable
