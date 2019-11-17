@@ -3,8 +3,8 @@ package dgos
 import (
 	"net/http"
 
-	"dgos/db"
-	"dgos/utils"
+	"github.com/mkusaka/dgos/db"
+	"github.com/mkusaka/dgos/utils"
 
 	"log"
 	"time"

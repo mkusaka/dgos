@@ -1,4 +1,4 @@
-module dgos
+module github.com/mkusaka/dgos
 
 go 1.13
 
