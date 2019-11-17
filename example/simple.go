@@ -7,9 +7,9 @@ import (
 
 func main() {
 	http.Handle("/", dgos.Handler(okHandler))
-	http.ListendAndServe(":3000", nil)
+	http.ListenAndServe(":3000", nil)
 }
 
-func okHanlder(w http.ResponseWriter, r *http.Request) {
+func okHandler(w http.ResponseWriter, r *http.Request) {
   w.Write([]byte("OK"))
 }
