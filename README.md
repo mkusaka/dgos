@@ -1,5 +1,5 @@
 # dgos
-add request limitation to protect ddos attack middleware.
+add request limitation middleware to protect ddos attack.
 
 # useage
 
